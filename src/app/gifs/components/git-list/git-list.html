@@ -1,14 +1,14 @@
 
 
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
-    <git-list-item></git-list-item>
+    <!-- @for (item of arrayUrls; track $index) {
+        <git-list-item [url]="item"></git-list-item>
+
+    } -->
+
+    @for (item of gifs(); track item) {
+        <git-list-item [url]="item"></git-list-item>
+
+    }
+    
 </div>
