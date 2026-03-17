@@ -6,8 +6,8 @@
 
     } -->
 
-    @for (item of gifs(); track item) {
-        <git-list-item [url]="item"></git-list-item>
+    @for (item of gifs(); track item.id) {
+        <git-list-item [url]="item.url"></git-list-item>
 
     }
     
